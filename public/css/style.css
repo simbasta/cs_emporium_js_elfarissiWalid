@@ -70,3 +70,104 @@ element.style {
 .modeJour{
     background-color: #fff;
 }
+
+
+/* section modal1 */
+.sectionmodal1, .sectionmodal2 {
+    position: fixed;
+    background: 0,0,0,7;
+    z-index: 1;
+    top: 10;
+    left: 37%;
+    display: block;
+    background-color: #ecf0f1;
+    width: 400px;
+    
+}
+.sectionmodal2{
+    top: 2%;
+}
+
+.dNone{
+    display: none;
+}
+
+.divModal2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.h1InModal1 {
+    margin-top: 70px;
+}
+
+.p1InModal {
+    margin-bottom: 72px;
+    margin-top: 7px;
+}
+
+.btn1inModal1{
+    border: none;
+    margin-top: 5px;
+    color: #fff;
+    background-color: #2980b9;
+    width: 121px;
+    height: 43px;
+    
+}
+
+
+/* section1 */
+
+.section1{
+    background-color: #f3f3f3;
+    margin-top: 25px;
+    display: flex;
+}
+
+.h1Shop {
+    color: #dd4545;
+    display: block;
+    padding-top: 60px;
+}
+
+.pInSection1{
+    width: 566px;
+}
+
+#btnSalItems{
+    margin-bottom: 50px;
+}
+.imgInSection1{
+    width: 500px;
+}
+.imgInSection2{
+    width: 355px;
+    margin-right: 170px;
+    
+}
+
+.divInSection1{
+    margin-left: 112px;
+}
+
+
+#btnSalItems{
+    background-color: #dd4545;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 425px ) {
+    .h1inheader {
+        margin-top: 49px;
+        margin-bottom: 42px;
+        font-size: 290px;
+        margin-left: 512px;
+    }
+}
+
+/* _____________________________________ */

@@ -16,3 +16,23 @@ btnJour.addEventListener("click", function(){
 console.log(btnNuit);
 
 console.log(body);
+
+
+// ____________________________________________________________
+// section modal
+let btnConnexion = document.getElementById("btnConnexion")
+let secmodal = document.getElementsByClassName("sectionmodal1")[0]
+
+btnConnexion.addEventListener("click", function(){
+    secmodal.classList.remove("dNone")
+})
+
+console.log(secmodal);
+
+let btnLModal2 = document.getElementById("btnLModal2")
+let secmodal2 = document.getElementsByClassName("sectionmodal2")[0]
+
+btnLModal2.addEventListener("click", function(){
+    secmodal.classList.add("dNone")
+    secmodal2.classList.remove("dNone")
+})
