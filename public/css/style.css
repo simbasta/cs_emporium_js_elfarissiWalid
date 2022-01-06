@@ -171,3 +171,69 @@ element.style {
 }
 
 /* _____________________________________ */
+
+/* section2 */
+.card1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.imgcard1 {
+    background-image: url('../img/services/service-1.jpg');
+    background-size: 100%;
+    -webkit-filter: grayscale(0);
+    width: 380px;
+    filter: grayscale(0);
+    margin-right: 5px;
+}
+
+.imgcard1:hover {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+.imgcard1:hover p {
+    border-bottom: white solid 1px;
+}
+
+.imgcard2 {
+    background-image: url('../img/services/service-2.jpg');
+    -webkit-filter: grayscale(0);
+    background-size: 100%;
+    width: 380px;
+    filter: grayscale(0);
+    margin-right: 5px;
+}
+
+.imgcard2:hover {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+.imgcard2:hover p {
+    border-bottom: white solid 1px;
+}
+
+.imgcard3 {
+    background-image: url('../img/services/slider-3.jpg');
+    background-size: 100%;
+    -webkit-filter: grayscale(0);
+    width: 380px;
+    filter: grayscale(0);
+    margin-right: 5px;
+}
+
+.imgcard3:hover {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+.imgcard3:hover p {
+    border-bottom: white solid 1px;
+}
+.living {
+    color: white;
+    margin-top: 125px;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    display: flex;
+}
