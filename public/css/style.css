@@ -1,0 +1,72 @@
+/* h1 in header */
+h1, .h1 {
+    font-size: calc(1.375rem + 1.5vw);
+    display: flex;
+    justify-content: space-around;
+}
+.h1inheader{
+    margin-top: 49px;
+    margin-bottom: 42px;
+}
+
+#btnModeJour{
+    background-color: #fff;
+    height: 16px;
+    width: 17px;
+    border-radius: 3px;
+}
+#btnModeNuit{
+    background-color: black;
+    border: none;
+    height: 16px;
+    width: 17px;
+    border-radius: 3px;
+    margin-left: 3px;
+    margin-right: 5px;
+}
+.divpInHeader{
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+}
+
+/* header nav bar */
+
+
+element.style {
+}
+.navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.nav-link{
+    margin-left: 35px;
+}
+
+#btnConnexion {
+    width: 98px;
+    height: 35px;
+    background: grey;
+    color: #fff;
+    border: none;
+    margin-left: 39px;
+}
+/* btns Mode nuit  */
+
+#btnModeJour{
+    background-color: #fff;
+}
+#btnModeNuit{
+    background-color: black;
+}
+
+.modeNuit{
+    background-color: #2d3436;
+}
+.modeJour{
+    background-color: #fff;
+}
