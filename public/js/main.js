@@ -18,7 +18,7 @@ console.log(btnNuit);
 console.log(body);
 
 
-// header navbar collapse
+// header navbar collapse j'ajoute ce ommentaire car oublier ce details
 btnColapse = document.getElementsByClassName("buttonColapse1")[0]
 divCollapse = document.getElementsByClassName("divCollapse")[0]
 
