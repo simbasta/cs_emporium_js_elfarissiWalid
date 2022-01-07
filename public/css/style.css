@@ -59,6 +59,7 @@ element.style {
 /* header nav bar  */
 .borderback{
     border-bottom: black solid 4px;
+    background-color: grey;
 }
 /* btns Mode nuit  */
 
@@ -219,21 +220,32 @@ element.style {
     justify-content: space-around;
     margin-top: 40px;
 }
-
+/* card1 */
 .imgcard1 {
     background-image: url('../img/services/service-1.jpg');
     background-size: 100%;
-    -webkit-filter: grayscale(0);
     width: 380px;
-    filter: grayscale(0);
+    margin-right: 5px;
 }
+.living{
+    position: relative;
+}
+.living::after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 160%;
+    bottom: -10px;
+    transition: 0.5s;
+    left: 50%;
+    height: 3px;
+    transform: translateX(-50%);
+    transition-timing-function: linear;
+}
+.imgcard1:hover .living::after{
+    width: 70%;}
 
-.imgcard1:hover {
-    z-index: 1;
-}
-.imgcard1:hover p {
-    border-bottom: white solid 1px;
-}
+/* card2 */
 
 .imgcard2 {
     background-image: url('../img/services/service-2.jpg'); 
@@ -242,26 +254,49 @@ element.style {
     margin-right: 5px;
 }
 
-.imgcard2:hover {
-    z-index: 1;
+.living{
+    position: relative;
 }
-.imgcard2:hover p {
-    border-bottom: white solid 1px;
+.living::after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 160%;
+    bottom: -10px;
+    transition: 0.5s;
+    left: 50%;
+    height: 3px;
+    transform: translateX(-50%);
+    transition-timing-function: linear;
 }
+.imgcard2:hover .living::after{
+    width: 70%;}
 
+/* cards3 */
 .imgcard3 {
     background-image: url('../img/services/slider-3.jpg');
     background-size: 100%;
     width: 380px;
     margin-right: 5px;
 }
-
-.imgcard3:hover {
-    z-index: 5;
+.living{
+    position: relative;
 }
-.imgcard3:hover p {
-    border-bottom: white solid 1px;
+.living::after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 160%;
+    bottom: -10px;
+    transition: 0.5s;
+    left: 50%;
+    height: 3px;
+    transform: translateX(-50%);
+    transition-timing-function: linear;
 }
+.imgcard3:hover .living::after{
+    width: 70%;}
+/* _______________________________________________________________ */
 .living {
     color: white;
     margin-top: 125px;
@@ -270,6 +305,7 @@ element.style {
     font-size: 40px;
     display: flex;
 }
+
 
 @media screen and (min-width: 375px) and (max-width: 425px ) {
     .divSec2G {
