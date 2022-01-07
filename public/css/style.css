@@ -36,6 +36,7 @@ h1, .h1 {
 element.style {
 }
 .navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
+
     display: flex;
     flex-wrap: inherit;
     align-items: center;
@@ -54,6 +55,10 @@ element.style {
     color: #fff;
     border: none;
     margin-left: 39px;
+}
+/* header nav bar  */
+.borderback{
+    border-bottom: black solid 4px;
 }
 /* btns Mode nuit  */
 
@@ -116,6 +121,19 @@ element.style {
     
 }
 
+@media screen and (min-width: 375px) and (max-width: 425px ) {
+    .h1inheader {
+        margin-top: 49px;
+        margin-bottom: 42px;
+        font-size: 79px;
+        margin-left: 33px;
+    }
+    .buttonColapse1{
+        background-color: #dd4545;
+
+    }
+    
+}
 
 /* section1 */
 
@@ -162,11 +180,34 @@ element.style {
 }
 
 @media screen and (min-width: 375px) and (max-width: 425px ) {
-    .h1inheader {
-        margin-top: 49px;
-        margin-bottom: 42px;
-        font-size: 290px;
-        margin-left: 512px;
+    .section1{
+        width: 100%;
+        background-color: #f3f3f3;
+        margin-top: 25px;
+        display: flex;
+    }
+    .divGeneralInSection1 {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .divInSection1 {
+        margin-right: 0;
+        display: flex;
+        margin-left: 31px !important;
+        align-items: center;
+        flex-direction: column;
+    }
+    .pInSection1 {
+        margin-top: 0 !important;
+        margin-bottom: 1rem !important;
+        font-size: 29px !important;
+        width: 395px !important;
+        text-align: center !important;
+    }
+    .imgInSection1 {
+        width: 352px;
     }
 }
 
@@ -185,29 +226,24 @@ element.style {
     -webkit-filter: grayscale(0);
     width: 380px;
     filter: grayscale(0);
-    margin-right: 5px;
 }
 
 .imgcard1:hover {
-    filter: grayscale(1);
-    -webkit-filter: grayscale(1);
+    z-index: 1;
 }
 .imgcard1:hover p {
     border-bottom: white solid 1px;
 }
 
 .imgcard2 {
-    background-image: url('../img/services/service-2.jpg');
-    -webkit-filter: grayscale(0);
+    background-image: url('../img/services/service-2.jpg'); 
     background-size: 100%;
     width: 380px;
-    filter: grayscale(0);
     margin-right: 5px;
 }
 
 .imgcard2:hover {
-    filter: grayscale(1);
-    -webkit-filter: grayscale(1);
+    z-index: 1;
 }
 .imgcard2:hover p {
     border-bottom: white solid 1px;
@@ -216,15 +252,12 @@ element.style {
 .imgcard3 {
     background-image: url('../img/services/slider-3.jpg');
     background-size: 100%;
-    -webkit-filter: grayscale(0);
     width: 380px;
-    filter: grayscale(0);
     margin-right: 5px;
 }
 
 .imgcard3:hover {
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
+    z-index: 5;
 }
 .imgcard3:hover p {
     border-bottom: white solid 1px;
@@ -238,15 +271,22 @@ element.style {
     display: flex;
 }
 
+@media screen and (min-width: 375px) and (max-width: 425px ) {
+    .divSec2G {
+        margin: 0;
+        display: flex !important;
+        flex-direction: column;
+        margin-left: 12px !important;
+        width: 409px !important;
+    }
+}
 /* section3 */
 .div1InSection3 {
-    margin-left: 130px;
+    margin-left: 19%;
 }
-.div1InSection13 {
-    margin-left: 244px;
-}
+
 .h3InSec3 {
-    margin-left: 461px;
+    margin-left: 43%;
     margin-top: 30px;
     margin-bottom: 38px;
 }
@@ -263,4 +303,57 @@ element.style {
 
 .cardSpace{
     margin-left: 30px;
+}
+.div1InSection23{
+    margin: 0;
+}
+.div1InSection13{
+    margin: 0;
+}
+
+.card-size {
+    width: 300px;
+    transition: 0.5s;
+}
+.card-size:hover {
+    transform:scale(1.15);
+}
+
+@media screen and (min-width: 375px) and (max-width: 425px ) {
+    .div1InSection3 {
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+    .card-size {
+        margin: 0;
+        width: 130% !important;
+    }
+}
+
+
+/* section4 */
+
+.section4{
+    background-image: url('../img/cta-bg.jpg');
+    background-size: 100%;
+}
+.divSec4G {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30%;
+    padding-bottom: 15%;
+}
+.h2InSection4 {
+    color: #fff;
+    text-align: center;
+}
+.btnInSection4 {
+    background-color: #dd4545;
+    border: none;
+    border-radius: 6px;
+    height: 36px;
+    width: 118px;
+    color: #fff;
 }
