@@ -1,14 +1,16 @@
-let body = document.getElementById("body")
+
+
+var body = document.getElementById("body")
 
 // btns Mode nuit
-let btnJour = document.getElementById("btnModeJour")
-let btnNuit = document.getElementById("btnModeNuit")
+let btnNuit = document.getElementsByClassName("btnModeNui1")[0]
 
 btnNuit.addEventListener("click", function(){
-    body.classList.add("modeNuit")
-})
-btnJour.addEventListener("click", function(){
-    body.classList.add("modeJour")
+    body.classList.toggle(".modeNuit")
+    body.classList.toggle(".modeJour") 
+
+    // ntBtn.classList.toggle('BtnModentsun')
+    // ntBtn.classList.toggle(' BtnModent')
 })
 
 
@@ -22,8 +24,10 @@ console.log(body);
 btnColapse = document.getElementsByClassName("buttonColapse1")[0]
 divCollapse = document.getElementsByClassName("divCollapse")[0]
 
+
 btnColapse.addEventListener("click",function(){
     divCollapse.classList.remove("dNone")
+
 })
 
 // ____________________________________________________________
@@ -57,3 +61,30 @@ window.addEventListener("scroll", function(){
             navbar.classList.remove("borderback")
         }
     })
+
+// ________________________________________________________________________
+// carousel
+
+const buttonsWrapper = document.querySelector(".btnCarou");
+const slides = document.querySelector(".G2divInSection5");
+
+buttonsWrapper.addEventListener("click", e => {
+  if (e.target.nodeName === "BUTTON") {
+    Array.from(buttonsWrapper.children).forEach(item =>
+      item.classList.remove("active")
+    );
+    if (e.target.classList.contains("first")) {
+      slides.style.transform = "translateX(-0%)";
+      e.target.classList.add("active");
+    } else if (e.target.classList.contains("second")) {
+      slides.style.transform = "translateX(-25.33333333333333%)";
+      e.target.classList.add("active");
+    } else if (e.target.classList.contains('third')){
+      slides.style.transform = 'translatex(-50.6666666667%)';
+      e.target.classList.add('active');
+    } else if (e.target.classList.contains('quatriem')){
+        slides.style.transform = 'translatex(-74.98999999%)';
+        e.target.classList.add('active');
+      }
+  }
+});

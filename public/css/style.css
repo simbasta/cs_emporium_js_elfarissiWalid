@@ -9,21 +9,6 @@ h1, .h1 {
     margin-bottom: 42px;
 }
 
-#btnModeJour{
-    background-color: #fff;
-    height: 16px;
-    width: 17px;
-    border-radius: 3px;
-}
-#btnModeNuit{
-    background-color: black;
-    border: none;
-    height: 16px;
-    width: 17px;
-    border-radius: 3px;
-    margin-left: 3px;
-    margin-right: 5px;
-}
 .divpInHeader{
     display: flex;
     align-items: center;
@@ -36,7 +21,7 @@ h1, .h1 {
 element.style {
 }
 .navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
-
+    
     display: flex;
     flex-wrap: inherit;
     align-items: center;
@@ -62,13 +47,22 @@ element.style {
     background-color: grey;
 }
 /* btns Mode nuit  */
-
-#btnModeJour{
+.btnModeJour{
     background-color: #fff;
+    height: 16px;
+    width: 17px;
+    border-radius: 3px;
 }
-#btnModeNuit{
+.btnModeNui1{
     background-color: black;
+    border: none;
+    height: 16px;
+    width: 17px;
+    border-radius: 3px;
+    margin-left: 3px;
+    margin-right: 5px;
 }
+
 
 .modeNuit{
     background-color: #2d3436;
@@ -82,6 +76,8 @@ element.style {
 .sectionmodal1, .sectionmodal2 {
     position: fixed;
     background: 0,0,0,7;
+
+
     z-index: 1;
     top: 10;
     left: 37%;
@@ -121,18 +117,36 @@ element.style {
     height: 43px;
     
 }
+.backBodymodal{
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 3);
+}
 
 @media screen and (min-width: 375px) and (max-width: 425px ) {
     .h1inheader {
-        margin-top: 49px;
-        margin-bottom: 42px;
-        font-size: 79px;
-        margin-left: 33px;
+    margin-top: 49px;
+    margin-bottom: 42px;
+    font-size: 49px;
+    margin-left: -131px;
     }
     .buttonColapse1{
         background-color: #dd4545;
 
     }
+    .divInSection1 {
+        margin-right: 0;
+        display: flex;
+        margin-left: 31px !important;
+        align-items: center;
+        flex-direction: column;
+        width: 83% !important;
+    }
+    .imgInSection2 {
+        width: 355px;
+        margin-right: 0px !important;
+    }
+    
     
 }
 
@@ -210,6 +224,29 @@ element.style {
     .imgInSection1 {
         width: 352px;
     }
+    .imgcard1 {
+        background-image: url(../img/services/service-1.jpg);
+        background-size: 100%;
+        width: 345px !important;
+        margin-right: 58px;
+        margin-left: -54px;
+    }
+    .imgcard2 {
+        background-image: url(../img/services/service-1.jpg);
+        background-size: 100%;
+        width: 345px !important;
+        margin-right: 58px;
+        margin-left: -54px;
+    }
+    .imgcard3 {
+        background-image: url(../img/services/service-1.jpg);
+        background-size: 100%;
+        width: 345px !important;
+        margin-right: 58px;
+        margin-left: -54px;
+    }
+    /* ____________________________________________________________ */
+
 }
 
 /* _____________________________________ */
@@ -315,6 +352,11 @@ element.style {
         margin-left: 12px !important;
         width: 409px !important;
     }
+    .div1InSection3 {
+        margin-left: -2% !important;
+        display: flex;
+        flex-direction: column;
+    }
 }
 /* section3 */
 .div1InSection3 {
@@ -365,6 +407,7 @@ element.style {
         margin: 0;
         width: 130% !important;
     }
+    
 }
 
 
@@ -378,8 +421,9 @@ element.style {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 30%;
-    padding-bottom: 15%;
+    padding-top: 19% !important;
+    /* padding-bottom: 4% !important; */
+    padding-bottom: 169px;
 }
 .h2InSection4 {
     color: #fff;
@@ -393,3 +437,53 @@ element.style {
     width: 118px;
     color: #fff;
 }
+
+/* section5 */
+
+
+/* carousel */
+
+.h1InSection5 {
+    margin-top: 55px;
+    margin-bottom: 42px;
+}
+
+.center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.gdivInSec5 {
+    display: flex;
+    grid-gap: 1em;
+    overflow: hidden;
+    width: 75em;
+}
+
+.gdivInSec5 > .G2divInSection5 {
+  display: flex;
+  grid-gap: 1em;
+  transition: all 1s ease-in-out;
+}
+
+
+
+.btnCarou > button {
+    background: #fff;
+    border: 1px solid black;
+  cursor: pointer;
+  margin: 0 0.600em;
+  border-radius: 100%;
+  height: 1em;
+  width: 1em;
+}
+
+.btnCarou {
+  margin-top: 0.5em;
+}
+
+
+  
