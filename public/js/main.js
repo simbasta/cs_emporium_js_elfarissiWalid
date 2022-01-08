@@ -2,19 +2,8 @@
 
 var body = document.getElementById("body")
 
-// btns Mode nuit
-let btnNuit = document.querySelector("button")
-btnNuit.addEventListener("click", function(){
-    document.body.classList.toggle("modeNuit")
-    document.body.classList.toggle("modeJour") 
 
-    // ntBtn.classList.toggle('BtnModentsun')
-    // ntBtn.classList.toggle(' BtnModent')
-})
-console.log(document.body);
-console.log(btnNuit);
 
-console.log(body);
 
 
 // header navbar collapse j'ajoute ce ommentaire car oublier ce details
@@ -30,26 +19,58 @@ btnColapse.addEventListener("click",function(){
 // ____________________________________________________________
 // section modal
 let btnConnexion = document.getElementById("btnConnexion")
-let secmodal = document.getElementsByClassName("sectionmodal1")[0]
+var btnDecoModal = document.getElementsByClassName("decoModal")[0]
+var btnDecoModal1 = document.getElementsByClassName("decoModal1")[0]
+console.log(btnDecoModal1);
+
+var secmodal = document.getElementsByClassName("sectionmodal1")[0]
+var secmodal2 = document.getElementsByClassName("sectionmodal2")[0]
+
+
 
 btnConnexion.addEventListener("click", function(){
     secmodal.classList.remove("dNone")
-})
 
-console.log(secmodal);
-
-let btnLModal2 = document.getElementById("btnLModal2")
-let secmodal2 = document.getElementsByClassName("sectionmodal2")[0]
-
-btnLModal2.addEventListener("click", function(){
+    btnDecoModal.addEventListener("click", function(){
+      secmodal.classList.add("dNone")
+    })
+    
+  })
+  console.log(secmodal);
+  
+  let btnLModal2 = document.getElementById("btnLModal2")
+  
+  btnLModal2.addEventListener("click", function(){
     secmodal.classList.add("dNone")
     secmodal2.classList.remove("dNone")
+    
+    btnDecoModal1.addEventListener("click", function(){
+      secmodal2.classList.add("dNone")
+    })
+  })
+
+  let divModal = document.getElementsByClassName("divGmodal")[0]
+  let divGmodal2 = document.getElementsByClassName("divGmodal1")[0]
+  // btns Mode nuit
+let btnNuit = document.querySelector("button")
+btnNuit.addEventListener("click", function(){
+    document.body.classList.toggle("modeNuit")
+    document.body.classList.toggle("modeJour") 
+    
+    divModal.classList.toggle("modeNuit")
+    divModal.classList.toggle("modeJour")
+
+    divGmodal2.classList.toggle("modeNuit")
+    divGmodal2.classList.toggle("modeJour")
+
+    // ntBtn.classList.toggle('BtnModentsun')
+    // ntBtn.classList.toggle(' BtnModent')
 })
 
-// header navbar js
-let navbar = document.getElementsByClassName("navbarborder")[0]
-let header = document.getElementsByClassName("h1inheader")[0]
-window.addEventListener("scroll", function(){
+  // header navbar js
+  let navbar = document.getElementsByClassName("navbarborder")[0]
+  let header = document.getElementsByClassName("h1inheader")[0]
+  window.addEventListener("scroll", function(){
         let jssScroll = window.scrollY
         if (jssScroll >= 175) {
             navbar.classList.add("borderback")
