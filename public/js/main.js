@@ -3,18 +3,15 @@
 var body = document.getElementById("body")
 
 // btns Mode nuit
-let btnNuit = document.getElementsByClassName("btnModeNui1")[0]
-
+let btnNuit = document.querySelector("button")
 btnNuit.addEventListener("click", function(){
-    body.classList.toggle(".modeNuit")
-    body.classList.toggle(".modeJour") 
+    document.body.classList.toggle("modeNuit")
+    document.body.classList.toggle("modeJour") 
 
     // ntBtn.classList.toggle('BtnModentsun')
     // ntBtn.classList.toggle(' BtnModent')
 })
-
-
-
+console.log(document.body);
 console.log(btnNuit);
 
 console.log(body);

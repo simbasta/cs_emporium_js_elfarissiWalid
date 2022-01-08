@@ -466,7 +466,7 @@ element.style {
 .gdivInSec5 > .G2divInSection5 {
   display: flex;
   grid-gap: 1em;
-  transition: all 1s ease-in-out;
+  transition:  1s ;
 }
 
 
@@ -534,4 +534,56 @@ element.style {
 .iconInSec5{
     font-size: 28px;
     margin-bottom: 40px;
+}
+
+/* footer */
+footer{
+    background-color: #343a40;
+    height: 350px;
+    margin-top: 36px;
+}
+
+.divGInFooter {
+    display: flex;
+    color: #fff;
+    margin-left: 100px;
+    padding-top: 70px;
+}
+.mDivInFooter{
+    margin-left: 50px;
+}
+
+.h5InFooter{
+    margin-bottom: 30px;
+}
+
+.p1InFooter{
+    width: 339px;
+}
+
+.divTagsInFooter{
+    width: 64% !important;
+}
+
+.tags{
+    color: #fff;
+    background-color: #343a40;
+    border: solid 1px #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-bottom: 6px;
+    
+}
+a:hover {
+    color: #fff !important;
+}
+.ulInFooter{
+    width: 254px;
+    padding-left: 0px;
+}
+
+li{
+    list-style: none;
 }
