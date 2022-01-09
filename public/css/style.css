@@ -605,10 +605,15 @@ footer{
 
 .h5InFooter{
     margin-bottom: 30px;
+    
 }
 
 .p1InFooter{
     width: 339px;
+    z-index: 1;
+    color: rgb(217, 230, 213);
+    color: rgba(231, 221, 221, 0.473);
+
 }
 
 .divTagsInFooter{
@@ -616,9 +621,14 @@ footer{
 }
 
 .tags{
-    color: #fff;
+    z-index: 1;
+    color: rgb(217, 230, 213);
+    color: rgba(231, 221, 221, 0.473);
+    background-color: rgb(160, 167, 158);
+    background-color: rgba(8, 7, 7, 0.473);
+
     background-color: #343a40;
-    border: solid 1px #fff;
+    border: solid 1px rgb(160, 167, 158);
     padding: 5px 10px;
     border-radius: 4px;
     text-decoration: none;
@@ -626,6 +636,21 @@ footer{
     margin-bottom: 6px;
     
 }
+
+.basDfooter{
+    background-color: black;
+    margin-top: 4%;
+}
+.pBasFooter {
+    text-align: center;
+    padding-top: 17px;
+    padding-bottom: 20PX;
+    z-index: 2;
+    color: rgb(217, 230, 213);
+    color: rgba(231, 221, 221, 0.473)
+}
+
+
 a:hover {
     color: #fff !important;
 }
@@ -697,6 +722,16 @@ li{
     .divTagsInFooter {
         width: 84% !important;
         margin-left: 32px;
+    }
+
+    .pBasFooter {
+        text-align: center;
+        padding-top: 22px;
+        padding-bottom: 30PX;
+        z-index: 2;
+        color: rgb(217, 230, 213);
+        color: rgba(231, 221, 221, 0.473);
+        margin-bottom: 0px;
     }
     
 }
