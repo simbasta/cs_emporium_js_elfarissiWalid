@@ -12,13 +12,20 @@ divCollapse = document.getElementsByClassName("divCollapse")[0]
 
 
 btnColapse.addEventListener("click",function(){
-    divCollapse.classList.remove("dNone")
+    
+    divCollapse.classList.toggle("dNone")
+    divCollapse.classList.toggle("nodNone")
 
 })
 
-// ____________________________________________________________
-// section modal
+
+// _______________________________________
+// // section modal
 let btnConnexion = document.getElementById("btnConnexion")
+
+// // celui des medias queries
+// btnConnexion2 = document.getElementById("btnConnexion2")
+
 var btnDecoModal = document.getElementsByClassName("decoModal")[0]
 var btnDecoModal1 = document.getElementsByClassName("decoModal1")[0]
 console.log(btnDecoModal1);
@@ -51,8 +58,12 @@ btnConnexion.addEventListener("click", function(){
 
   let divModal = document.getElementsByClassName("divGmodal")[0]
   let divGmodal2 = document.getElementsByClassName("divGmodal1")[0]
+
+  // ____________________________________________________________________________
   // btns Mode nuit
-let btnNuit = document.querySelector("button")
+let btnNuit = document.querySelector(".btnModeNui1")
+let btnNuit2 = document.querySelector(".btnModeNui2")
+
 btnNuit.addEventListener("click", function(){
     document.body.classList.toggle("modeNuit")
     document.body.classList.toggle("modeJour") 
@@ -66,7 +77,32 @@ btnNuit.addEventListener("click", function(){
     // ntBtn.classList.toggle('BtnModentsun')
     // ntBtn.classList.toggle(' BtnModent')
 })
+// le btn dans les medias queries
+btnNuit2.addEventListener("click", function(){
+    document.body.classList.toggle("modeNuit")
+    document.body.classList.toggle("modeJour") 
+    
+    divModal.classList.toggle("modeNuit")
+    divModal.classList.toggle("modeJour")
 
+    divGmodal2.classList.toggle("modeNuit")
+    divGmodal2.classList.toggle("modeJour")
+
+    // ntBtn.classList.toggle('BtnModentsun')
+    // ntBtn.classList.toggle(' BtnModent')
+})
+
+// pour que le btn mode nuit change de couleur 
+btnNuit.addEventListener("click", function(){
+    btnNuit.classList.toggle("btnModeNui11")
+    btnNuit.classList.toggle("btnModeNui1")
+})
+
+btnNuit2.addEventListener("click", function(){
+    btnNuit2.classList.toggle("btnModeNui12")
+    btnNuit2.classList.toggle("btnModeNui2")
+})
+// ______________________________________________________________________
   // header navbar js
   let navbar = document.getElementsByClassName("navbarborder")[0]
   let header = document.getElementsByClassName("h1inheader")[0]
