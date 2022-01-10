@@ -44,7 +44,7 @@ btnConnexion.addEventListener("click", function(){
     
   })
   console.log(secmodal);
-  
+  // btn aller se connecter
   let btnLModal2 = document.getElementById("btnLModal2")
   
   btnLModal2.addEventListener("click", function(){
@@ -55,6 +55,17 @@ btnConnexion.addEventListener("click", function(){
       secmodal2.classList.add("dNone")
     })
   })
+
+// btn retrourner s'inscrire
+let btnLModal3 = document.getElementById("btnLModal3")
+
+btnLModal3.addEventListener("click", function(){
+  secmodal2.classList.add("dNone")
+  secmodal.classList.remove("dNone")
+  
+})
+
+// _______________________________
 
   let divModal = document.getElementsByClassName("divGmodal")[0]
   let divGmodal2 = document.getElementsByClassName("divGmodal1")[0]
