@@ -141,7 +141,7 @@ function playcarousel() {
       Array.from(buttonsWrapper.children).forEach(item =>
         item.classList.remove("active")
       );
-      // qaund on appuie sur ces btn le carousel slide a au % demander
+      // qaund on appuie sur l'uns ces btn le carousel slide a au % demander
       if (e.target.classList.contains("first")) {
         slides.style.transform = "translateX(-0%)";
 
@@ -164,7 +164,7 @@ function playcarousel() {
 }
 
 playcarousel()
-// _______________________________________________________
+// -----------------------------------------------------------------------
 
 
 // CAROUSEL AUTO
