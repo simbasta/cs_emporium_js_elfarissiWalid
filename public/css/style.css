@@ -430,8 +430,8 @@ box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0p
         padding-left: 0;
         background-color: brown;
         text-shadow:0 0 2px #FF0000,0 0 30px #FF0000,5px 9px 5px #333, 0 0 150px #FF0000;color:#FF0000;
-background-color:#2E8ECE;
-box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        background-color:#2E8ECE;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
         
     }
     .navbar-nav .nav-link:active {
@@ -596,7 +596,7 @@ box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0p
     .divInSection1 {
         margin-right: 0;
         display: flex;
-        margin-left: 31px !important;
+        margin-left: 8% !important;
         align-items: center;
         flex-direction: column;
     }
@@ -608,7 +608,7 @@ box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0p
         text-align: center !important;
     }
     .imgInSection1 {
-        width: 100%;
+        width: 60%;
     }
     
 }
@@ -640,16 +640,40 @@ box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0p
         font-size: 29px !important;
         width: 100%;
         text-align: center !important;
+        margin-left: 13%;
     }
     .imgInSection1 {
-        width: 100%;
+        width: 61%;
+        margin-left: -26%;
     }
     
+    .h1Shop {
+        color: #dd4545;
+        display: block;
+        padding-top: 60px;
+        margin-left: -69%;
+    }
+    #btnSalItems {
+        background-color: #dd4545;
+        border: none;
+        border-radius: 50px;
+        color: #fff;
+        width: 150px;
+        height: 40px;
+        margin-left: -65%;
+    }
 }
 
-/* _____________________________________ */
+/* _____________________________________________ */
 
 /* section2 */
+
+.cardInSec2{
+    padding-bottom: 27px;
+}
+
+
+
 .card1 {
     display: flex;
     justify-content: space-around;
@@ -712,6 +736,7 @@ box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0p
     
 }
 
+
 /* cards3 */
 .imgcard3 {
     background-image: url('../img/services/slider-3.jpg');
@@ -751,6 +776,18 @@ box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0p
 /* media queries mobil M */
 
 @media screen and (min-width: 375px) and (max-width: 425px ) {
+    .living::after {
+        content: '';
+        position: absolute;
+        background-color: white;
+        width: 140%;
+        bottom: -10px;
+        transition: 0.5s;
+        left: 50%;
+        height: 3px;
+        transform: translateX(-50%);
+        transition-timing-function: linear;
+    }
     .section2{
         display: flex;
         flex-direction: column;
@@ -761,19 +798,19 @@ box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0p
         flex-direction: column;
     }
     .imgcard1 {
-        background-image: url(../img/services/service-1.jpg);
+
         background-size: 100%;
         width: 89%;
         margin-right: -5px;
     }
     .imgcard2 {
-        background-image: url(../img/services/service-1.jpg);
+
         background-size: 100%;
         width: 89%;
         margin-right: -5px;
     }
     .imgcard3 {
-        background-image: url(../img/services/service-1.jpg);
+ 
         background-size: 100%;
         width: 89%;
         margin-right: -5px;
@@ -792,19 +829,19 @@ box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0p
         flex-direction: column;
     }
     .imgcard1 {
-        background-image: url(../img/services/service-1.jpg);
+
         background-size: 100%;
         width: 89%;
         margin-right: -5px;
     }
     .imgcard2 {
-        background-image: url(../img/services/service-1.jpg);
+
         background-size: 100%;
         width: 89%;
         margin-right: -5px;
     }
     .imgcard3 {
-        background-image: url(../img/services/service-1.jpg);
+
         background-size: 100%;
         width: 89%;
         margin-right: -5px;
@@ -823,19 +860,19 @@ box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0p
         flex-direction: column;
     }
     .imgcard1 {
-        background-image: url(../img/services/service-1.jpg);
+  
         background-size: 100%;
         width: 89%;
         margin-right: -5px;
     }
     .imgcard2 {
-        background-image: url(../img/services/service-1.jpg);
+
         background-size: 100%;
         width: 89%;
         margin-right: -5px;
     }
     .imgcard3 {
-        background-image: url(../img/services/service-1.jpg);
+  
         background-size: 100%;
         width: 89%;
         margin-right: -5px;
@@ -854,19 +891,19 @@ box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0p
         flex-direction: column;
     }
     .imgcard1 {
-        background-image: url(../img/services/service-1.jpg);
+
         background-size: 100%;
         width: 89%;
         margin-right: -5px;
     }
     .imgcard2 {
-        background-image: url(../img/services/service-1.jpg);
+
         background-size: 100%;
         width: 89%;
         margin-right: -5px;
     }
     .imgcard3 {
-        background-image: url(../img/services/service-1.jpg);
+
         background-size: 100%;
         width: 89%;
         margin-right: -5px;
@@ -1111,6 +1148,36 @@ box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0p
 .btnCarou {
   margin-top: 0.5em;
 }
+
+ /* ZOOM IMAGE  */
+
+ .wprock-img-zoom-hover .wprock-img-zoom {
+    overflow: hidden;
+    position: relative; 
+}
+
+.wprock-img-zoom-hover .wprock-img-zoom img {
+    max-width: 100%;
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    max-height: 183px;
+}
+
+.wprock-img-zoom-hover .wprock-img-zoom * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wprock-img-zoom-hover:hover .wprock-img-zoom img {
+    -moz-transform: scale(1.06);
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
+}
+            
 
 /* media queries mobil M */
 
@@ -1568,3 +1635,7 @@ li{
     }
     
 }
+
+
+
+
