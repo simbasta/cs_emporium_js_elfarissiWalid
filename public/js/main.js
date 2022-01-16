@@ -176,15 +176,12 @@ setInterval(() => {
     pourcentage = 0
   }
   pourcentage -= 25.33333333333333
-
+  
   slides.style.transform = "translateX(" + pourcentage + "%)";
 
-
+  console.log(pourcentage);
 
 }, 5000);
-
-
-
 
 
 

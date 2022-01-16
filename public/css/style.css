@@ -1158,9 +1158,6 @@ box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0p
 
 .wprock-img-zoom-hover .wprock-img-zoom img {
     max-width: 100%;
-    -moz-transition: all 0.8s;
-    -webkit-transition: all 0.8s;
-    transition: all 0.8s;
     max-height: 183px;
 }
 
@@ -1172,10 +1169,10 @@ box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0p
     padding: 0;
 }
 
-.wprock-img-zoom-hover:hover .wprock-img-zoom img {
-    -moz-transform: scale(1.06);
-    -webkit-transform: scale(1.06);
-    transform: scale(1.06);
+.wprock-img-zoom img:hover {
+    -moz-transform: scale(1.19);
+    -webkit-transform: scale(1.19);
+    transform: scale(1.19);
 }
             
 
@@ -1635,7 +1632,3 @@ li{
     }
     
 }
-
-
-
-
